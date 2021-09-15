@@ -13,3 +13,6 @@ Object - An instance of a class
 - To access properties on a dictionary use dot notation
 
 Abstraction - Using a class we can abstract out the details involved with interacting with our class. And then we can think in high level terms.
+
+Inheretence
+When creating a child class in the __init__ method, call "super().__init__". This is going allow the child class to inheret from the parent class.

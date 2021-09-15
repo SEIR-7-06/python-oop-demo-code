@@ -61,6 +61,7 @@ class Phone:
     def send_text(self, recipient):
         print(f'Sending text to {recipient}!')
 
+
 my_phone = Phone('555-5555')
 my_friends_phone = Phone('333-3333')
 
@@ -71,3 +72,35 @@ my_phone.make_call(friends_number)
 my_friends_phone.make_call(my_phone_number)
 
 ##########################################################
+class SmartPhone(Phone):
+    def __init__(self, phone_number):
+        # Allows us to inheret from the parent class
+        super().__init__(phone_number)
+
+        self.apps = ['email', 'calculator', 'clock']
+
+    def add_app(self, new_app):
+        self.apps.append(new_app)
+
+    def get_apps(self):
+        print(self.apps)
+
+    # Remove an app
+    def remove_app(self, chosen_app):
+        self.apps.remove(chosen_app)
+
+    # Remove all apps
+    def remove_all_apps(self):
+        self.apps.clear()
+
+my_iphone = SmartPhone('222-2222')
+
+# print(my_iphone.phone_number)
+# print(my_iphone.apps)
+my_iphone.add_app('news')
+my_iphone.add_app('calendar')
+my_iphone.remove_app('news')
+my_iphone.remove_all_apps()
+# print(my_iphone.apps)
+my_iphone.get_apps()
+# my_iphone.make_call('123-4567')
