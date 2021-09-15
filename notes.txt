@@ -1,0 +1,15 @@
+Python Classes
+
+__init__ - The method called when the class is initialized / When we create an instance of our class.
+
+self - The instance of the class. We are able to attach properties to that instance.
+
+When creating an instance, leave out the "new" keyword
+
+Dictionary - A standalone set of key / value pairs
+- To access properties on a dictionary use square brackets
+
+Object - An instance of a class
+- To access properties on a dictionary use dot notation
+
+Abstraction - Using a class we can abstract out the details involved with interacting with our class. And then we can think in high level terms.
