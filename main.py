@@ -28,7 +28,7 @@ class BankAccount:
         self.balance = 0
 
     def deposit(self, amount):
-        print('depositting money!')
+        print('depositing money!')
         self.balance = self.balance + amount
 
     def withdraw(self, amount):
@@ -43,3 +43,31 @@ my_checking = BankAccount('checking')
 my_savings = BankAccount('savings')
 
 my_checking.deposit(200)
+
+#########################################################
+
+# Exercise
+# Create a Phone class and give 2 methods
+# - make_call
+# - send_text
+
+class Phone:
+    def __init__(self, phone_number):
+        self.phone_number = phone_number
+
+    def make_call(self, recipient):
+        print(f'Calling {recipient} from {self.phone_number}!')
+
+    def send_text(self, recipient):
+        print(f'Sending text to {recipient}!')
+
+my_phone = Phone('555-5555')
+my_friends_phone = Phone('333-3333')
+
+friends_number = my_friends_phone.phone_number
+my_phone_number = my_phone.phone_number
+
+my_phone.make_call(friends_number)
+my_friends_phone.make_call(my_phone_number)
+
+##########################################################
